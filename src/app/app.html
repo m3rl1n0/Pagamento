@@ -22,12 +22,13 @@
               {{ service.buttonText }}
             </button>
           } @else {
-            <a [href]="service.link"
-               target="_blank"
-               kendoButton
-               [class]="'payment-button ' + service.colorClass">
+            <button kendoButton
+                    (click)="openPaymentLink(service.link)"
+                    themeColor="primary"
+                    size="large"
+                    [class]="'payment-button ' + service.colorClass">
               {{ service.buttonText }}
-            </a>
+            </button>
           }
         </kendo-card-body>
       </kendo-card>

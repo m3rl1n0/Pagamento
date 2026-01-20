@@ -50,6 +50,10 @@ export class App {
     }
   ]);
 
+  protected openPaymentLink(url: string): void {
+    window.open(url, '_blank');
+  }
+
   protected copyIBAN(): void {
     const iban = 'IT13Z0344214239000031050713';
 
