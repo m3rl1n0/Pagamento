@@ -29,6 +29,10 @@
     "@angular/forms": "^21.1.0",
     "@angular/platform-browser": "^21.1.0",
     "@angular/router": "^21.1.0",
+    "@progress/kendo-angular-buttons": "^22.0.1",
+    "@progress/kendo-angular-common": "^22.0.1",
+    "@progress/kendo-angular-icons": "^22.0.1",
+    "@progress/kendo-licensing": "^1.9.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0"
   },
