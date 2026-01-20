@@ -32,7 +32,10 @@
     "@progress/kendo-angular-buttons": "^22.0.1",
     "@progress/kendo-angular-common": "^22.0.1",
     "@progress/kendo-angular-icons": "^22.0.1",
+    "@progress/kendo-angular-layout": "^22.0.1",
+    "@progress/kendo-angular-notification": "^22.0.1",
     "@progress/kendo-licensing": "^1.9.1",
+    "@progress/kendo-theme-default": "^12.3.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0"
   },

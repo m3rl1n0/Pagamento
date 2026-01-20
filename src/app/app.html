@@ -6,24 +6,31 @@
 
   <div class="cards-grid">
     @for (service of paymentServices(); track service.id) {
-      <div class="payment-card">
-        <div class="logo-container">
-          <img [src]="service.logo" [alt]="service.name">
-        </div>
-        <h2 class="service-name">{{ service.name }}</h2>
+      <kendo-card class="payment-card" [width]="'100%'">
+        <kendo-card-body>
+          <div class="logo-container">
+            <img [src]="service.logo" [alt]="service.name">
+          </div>
+          <h2 class="service-name">{{ service.name }}</h2>
 
-        @if (service.isIban) {
-          <button (click)="copyIBAN()" [class]="'payment-button ' + service.colorClass">
-            {{ service.buttonText }}
-          </button>
-        } @else {
-          <a [href]="service.link"
-             target="_blank"
-             [class]="'payment-button ' + service.colorClass">
-            {{ service.buttonText }}
-          </a>
-        }
-      </div>
+          @if (service.isIban) {
+            <button kendoButton
+                    (click)="copyIBAN()"
+                    themeColor="primary"
+                    size="large"
+                    [class]="'payment-button ' + service.colorClass">
+              {{ service.buttonText }}
+            </button>
+          } @else {
+            <a [href]="service.link"
+               target="_blank"
+               kendoButton
+               [class]="'payment-button ' + service.colorClass">
+              {{ service.buttonText }}
+            </a>
+          }
+        </kendo-card-body>
+      </kendo-card>
     }
   </div>
 </div>

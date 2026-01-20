@@ -30,21 +30,25 @@
   animation: fadeInUp 0.8s ease-out;
 }
 
-.payment-card {
+::ng-deep .payment-card.k-card {
   background: white;
   border-radius: 20px;
-  padding: 32px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease;
+  border: none;
+}
+
+::ng-deep .payment-card.k-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+::ng-deep .payment-card .k-card-body {
+  padding: 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-}
-
-.payment-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
 .logo-container {
@@ -71,7 +75,7 @@
   color: #2d3748;
 }
 
-.payment-button {
+::ng-deep .payment-button.k-button {
   width: 100%;
   padding: 16px 24px;
   border: none;
@@ -85,42 +89,46 @@
   display: inline-block;
 }
 
-.revolut-btn {
+::ng-deep .payment-button.revolut-btn.k-button {
   background: linear-gradient(135deg, #191c1f 0%, #7f84f6 100%);
   color: white;
+  border: none;
 }
 
-.revolut-btn:hover {
+::ng-deep .payment-button.revolut-btn.k-button:hover {
   background: linear-gradient(135deg, #0d0e10 0%, #6b70e0 100%);
   transform: scale(1.02);
 }
 
-.paypal-btn {
+::ng-deep .payment-button.paypal-btn.k-button {
   background: linear-gradient(135deg, #003087 0%, #009cde 100%);
   color: white;
+  border: none;
 }
 
-.paypal-btn:hover {
+::ng-deep .payment-button.paypal-btn.k-button:hover {
   background: linear-gradient(135deg, #00457C 0%, #0088c7 100%);
   transform: scale(1.02);
 }
 
-.satispay-btn {
+::ng-deep .payment-button.satispay-btn.k-button {
   background: linear-gradient(135deg, #DD5234 0%, #250502 100%);
   color: white;
+  border: none;
 }
 
-.satispay-btn:hover {
+::ng-deep .payment-button.satispay-btn.k-button:hover {
   background: linear-gradient(135deg, #c44829 0%, #1a0401 100%);
   transform: scale(1.02);
 }
 
-.widiba-btn {
+::ng-deep .payment-button.widiba-btn.k-button {
   background: linear-gradient(135deg, #C04B66 0%, #2C2E37 100%);
   color: white;
+  border: none;
 }
 
-.widiba-btn:hover {
+::ng-deep .payment-button.widiba-btn.k-button:hover {
   background: linear-gradient(135deg, #ab4259 0%, #1f2025 100%);
   transform: scale(1.02);
 }
